@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:gravity="center"
+    android:background="#F8F9FA">
+
+    <!-- Ícone ou Logo -->
+    <ImageView
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:src="@drawable/logo"
+        android:layout_marginTop="32dp"
+        android:contentDescription="Logo" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LUSCAA"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#212529"
+        android:layout_marginTop="12dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RGM: LUSCAA"
+        android:textSize="14sp"
+        android:textColor="#6C757D"
+        android:layout_marginBottom="40dp" />
+
+    <!-- Campo de Nome com visual mais limpo -->
+    <EditText
+        android:id="@+id/editNome"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:hint="Digite o seu nome..."
+        android:inputType="textPersonName"
+        android:paddingHorizontal="16dp"
+        android:layout_marginBottom="24dp" />
+
+    <!-- Botões -->
+    <Button
+        android:id="@+id/btnIniciar"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:text="INICIAR QUIZ"
+        android:textStyle="bold"
+        android:backgroundTint="#4F46E5"
+        android:layout_marginBottom="12dp" />
+
+    <Button
+        android:id="@+id/btnSair"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:text="SAIR"
+        android:textStyle="bold"
+        android:backgroundTint="#DC3545" />
+
+</LinearLayout>
