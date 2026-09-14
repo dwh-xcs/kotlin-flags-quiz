@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:gravity="center"
+    android:background="#F8F9FA">
+
+    <TextView
+        android:id="@+id/txtTituloPergunta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Que país é este?"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="#212529"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="24dp" />
+
+    <!-- Imagem da Bandeira -->
+    <ImageView
+        android:id="@+id/imgBandeira"
+        android:layout_width="280dp"
+        android:layout_height="170dp"
+        android:scaleType="fitCenter"
+        android:layout_marginBottom="32dp"
+        android:contentDescription="Bandeira do País" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp">
+
+        <RadioButton
+            android:id="@+id/rbOpcao1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Opção 1"
+            android:textSize="16sp"
+            android:minHeight="48dp"
+            android:layout_marginBottom="8dp" />
+
+        <RadioButton
+            android:id="@+id/rbOpcao2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Opção 2"
+            android:textSize="16sp"
+            android:minHeight="48dp"
+            android:layout_marginBottom="8dp" />
+
+        <RadioButton
+            android:id="@+id/rbOpcao3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Opção 3"
+            android:textSize="16sp"
+            android:minHeight="48dp"
+            android:layout_marginBottom="8dp" />
+
+        <RadioButton
+            android:id="@+id/rbOpcao4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Opção 4"
+            android:textSize="16sp"
+            android:minHeight="48dp" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnResponder"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:text="RESPONDER"
+        android:textStyle="bold"
+        android:backgroundTint="#4F46E5" />
+
+</LinearLayout>
